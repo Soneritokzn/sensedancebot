@@ -148,6 +148,10 @@ public class SenseBot extends TelegramLongPollingBot {
                     "Индивидуальное занятие 3 - 2500 руб(1 занятие) 10000 руб (5 занятий)");
             i = false;
         }
+        if (update.getMessage().getText().equals("/start")){
+            message.setText("Привет! Это бот студии Sense. Жми Меню");
+            i = false;
+        }
         if (i){
             message.setText("Неправильная команда");
         }
